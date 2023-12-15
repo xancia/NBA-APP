@@ -6,6 +6,7 @@ import Games from "./components/Games"
 import { useEffect } from "react"
 import { useDispatch } from 'react-redux';
 import { setTeamData } from "./components/store/teamDataSlice"
+import Form from "./components/Form"
 
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/teams" element={<Teams />} />
         <Route path="/teams/:id" element={<Games />} />
-        <Route path="/contact" element={null} />
+        <Route path="/contact" element={<Form />} />
       </Routes>
     </div>
   )
