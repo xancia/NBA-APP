@@ -11,7 +11,7 @@ export default function SoloedTeam({ team }) {
 
   return (
     <div onClick={handleReveal}>
-      <div className="flex justify-center gap-4 bg-slate-100 rounded-xl">
+      <div className="flex flex-row justify-center  gap-4 bg-slate-100 rounded-xl">
         <img src={team.href} alt="Fix me" className="h-20" />
       </div>
       {/* <div>{team.abbreviation}</div> */}
