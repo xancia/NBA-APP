@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { useParams } from "react-router-dom"
 import GameCard from "./GameCard"
+import Nav from "./Nav"
 
 const Games = () => {
   const {id} = useParams()
@@ -40,10 +41,11 @@ const Games = () => {
 
   return (
     <div className="flex flex-col w-full items-center bg-gradient-to-b from-white via-white  to-gray-500">
+      <Nav />
       <div className="flex justify-center items-center p-8">
         {team && <img className="w-40" src={team.href} alt="team pic" />}
       </div>
-      <div className="max-w-screen-lg w-full h-full border border-black">
+      <div className="max-w-screen-lg w-full h-full">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 text-center py-8 px-12 sm:px-36 lg:px-0">
         {gameData && gameData.map((game) => (
           <GameCard key={game.id} game={game}/>

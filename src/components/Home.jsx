@@ -1,12 +1,10 @@
-import { useSelector } from "react-redux"
+import Nav from "./Nav"
 
 
 const Home = () => {
-  const teams = useSelector((state) => state.teamData)
 
   return (
-    <div>{teams && <img src={teams[0].href}/>}
-          </div>
+    <div><Nav /></div>
   )
 }
 

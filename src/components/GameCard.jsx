@@ -2,16 +2,16 @@
 
 const GameCard = ({game}) => {
   return (
-    <div className="">
+    <div className="shadow-lg rounded-lg shadow-[#BF7950] bg-white">
         
-            {game.date}
-        <div>
-            {game.home_team.full_name}
+            {game.date.split('T')[0]}
+        <div className="mt-4">
+            <p>{game.home_team.full_name}</p>
             {game.home_team_score}
         </div>
 
-        <div>
-            {game.visitor_team.full_name}
+        <div className="mt-2">
+            <p>{game.visitor_team.full_name}</p>
             {game.visitor_team_score}
         </div>
         

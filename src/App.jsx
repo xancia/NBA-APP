@@ -53,6 +53,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/teams" element={<Teams />} />
         <Route path="/teams/:id" element={<Games />} />
+        <Route path="/contact" element={null} />
       </Routes>
     </div>
   )

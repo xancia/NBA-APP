@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import SoloedTeam from './SoloedTeam'
 import { useSelector } from 'react-redux';
+import Nav from "./Nav";
 
 const Teams = () => {
 
@@ -9,7 +10,7 @@ const Teams = () => {
 
   return (
     <Fragment>
-      <div>Teams</div>
+      <Nav />
       <hr />
 
       {teamData && (
