@@ -6,13 +6,13 @@ export default function Nav() {
             <img className="w-7" src='/NBA.png' alt="" />
             <div className="flex justify-evenly w-screen mr-10">
             <Link to='/'> 
-                <img className="w-40" src="/homebutton.png" alt="" />
+                <img className="w-40 hover:scale-105 duration-100" src="/homebutton.png" alt="" />
             </Link>
             <Link to='/teams'>
-                <img className="w-40" src="/teambutton.png" alt="" />
+                <img className="w-40 hover:scale-105 duration-100" src="/teambutton.png" alt="" />
             </Link>
             <Link to='/contact'>
-                <img className="w-40" src="/contactbutton.png" alt="" />
+                <img className="w-40 hover:scale-105 duration-100" src="/contactbutton.png" alt="" />
             </Link>
             </div>
         </div>

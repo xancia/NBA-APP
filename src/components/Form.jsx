@@ -3,9 +3,9 @@ import Nav from "./Nav"
 
 const Form = () => {
   return (
-    <div className="h-screen w-full">
+    <div className=" w-full bg-gradient-to-b from-gray-600 to bg-slate-800 text-white">
         <Nav />
-        <div className="flex justify-center items-center h-full pb-24 text-center">
+        <div className="flex justify-center items-center h-screen pb-24 text-center">
         <form>
             <label>Name</label>
             <br />
@@ -18,7 +18,7 @@ const Form = () => {
             <div>
             <label>Comment</label>
             <br />
-            <input className="border border-gray-800 w-80 h-32"></input>
+            <input className="border border-gray-800 w-80 h-32 rounded-sm"></input>
             <br />
             </div>
         </form>

@@ -10,7 +10,7 @@ const Teams = () => {
 
   return (
     <Fragment>
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-full bg-gradient-to-b from-gray-600 to bg-slate-800 text-white">
       <Nav />
       <div className="max-w-screen-lg p-8">
       {teamData && (
