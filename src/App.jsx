@@ -28,7 +28,7 @@ function App() {
       let newData = result.data.map((data) => {
         return ({
         ...data,
-        href: `../public/logos/${data.abbreviation}.png`
+        href: `/logos/${data.abbreviation}.png`
 
         })})
         console.log(newData)
@@ -52,7 +52,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/teams" element={<Teams />} />
-        <Route path="/teams/:abbreviation" element={<Games />} />
+        <Route path="/teams/:id" element={<Games />} />
       </Routes>
     </div>
   )
