@@ -19,12 +19,12 @@ export default function SoloedTeam({ team }) {
       </div>
       {/* <div>{team.abbreviation}</div> */}
       {reveal && (
-        <Link  className="flex justify-center flex-row bg-gray-200 gap-8">
+        <div className="flex justify-center flex-row bg-gray-200 gap-8">
           <div>Cit: {team.city}</div>
-          <div>Coonfrence: {team.conference}</div>
+          <div>Conference: {team.conference}</div>
           <div>Division: {team.division}</div>
 
-        </Link>
+        </div>
       )}
       <hr />
     </div>
