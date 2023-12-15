@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 export default function Nav() {
     return (
         <div className="flex justify-evenly bg-gray-600 text-white p-4 w-full">
+            <img src='' alt="" />
             <Link to='/'> 
                 <div>Home</div>
             </Link>
