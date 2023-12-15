@@ -28,7 +28,7 @@ function App() {
       let newData = result.data.map((data) => {
         return ({
         ...data,
-        href: `../public/logos/${data.abbreviation}.png`
+        href: `/logos/${data.abbreviation}.png`
 
         })})
         console.log(newData)
