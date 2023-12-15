@@ -12,17 +12,18 @@ const Teams = () => {
     <Fragment>
       <Nav />
       <hr />
-
+      <div className="">
       {teamData && (
-        <>
+        <div className="flex justify-evenly flex-wrap items-center p-3 gap-5">
           {teamData.map((team) => (
             <SoloedTeam
             key={team.id} 
             team={team}
             />
           ))}
-        </>
+        </div>
       )}
+      </div>
     </Fragment>
   );
 };
