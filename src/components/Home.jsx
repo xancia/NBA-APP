@@ -1,8 +1,11 @@
+import { useSelector } from "react-redux"
 
 
 const Home = () => {
+  const teams = useSelector((state) => state.teamData)
+
   return (
-    <div>Home</div>
+    <div>{teams && teams[0].full_name}</div>
   )
 }
 
