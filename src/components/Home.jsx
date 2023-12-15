@@ -5,7 +5,8 @@ const Home = () => {
   const teams = useSelector((state) => state.teamData)
 
   return (
-    <div>{teams && teams[0].full_name}</div>
+    <div>{teams && <img src={teams[0].href}/>}
+          </div>
   )
 }
 

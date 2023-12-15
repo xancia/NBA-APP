@@ -9,8 +9,8 @@ const gameDataSlice = createSlice({
         state = action.payload
         return state
        }
-    }
-})
+       
+}})
 
 export const { setGameData } = gameDataSlice.actions
 
