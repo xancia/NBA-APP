@@ -2,7 +2,7 @@
 
 const GameCard = ({game}) => {
   return (
-    <div className="shadow-lg rounded-lg shadow-[#BF7950] bg-white">
+    <div className="shadow-lg rounded-lg shadow-orange-500 bg-white p-2">
         
             {game.date.split('T')[0]}
         <div className="mt-4">
