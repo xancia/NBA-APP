@@ -40,7 +40,7 @@ const Games = () => {
 
 
   return (
-    <div className="flex flex-col w-full items-center bg-gradient-to-b from-white via-white  to-gray-500">
+    <div className="flex flex-col w-full items-center bg-gradient-to-b from-white via-white via-10% to-sky-800">
       <Nav />
       <div className="flex justify-center items-center p-8">
         {team && <img className="w-40" src={team.href} alt="team pic" />}
