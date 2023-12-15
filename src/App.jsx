@@ -24,7 +24,16 @@ function App() {
       const response = await fetch(url, options);
       const result = await response.json();
       console.log(result.data);
-      dispatch(setTeamData(result.data))
+      // dispatch(setTeamData(result.data))
+      let newData = result.data.map((data) => {
+        return ({
+        ...data,
+        href: `../public/logos/${data.abbreviation}.png`
+
+        })})
+        console.log(newData)
+        dispatch(setTeamData(newData))
+      
     } catch (error) {
       console.error(error);
     }
