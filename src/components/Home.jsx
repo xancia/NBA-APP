@@ -1,8 +1,12 @@
+import { useSelector } from "react-redux"
 
 
 const Home = () => {
+  const teams = useSelector((state) => state.teamData)
+
   return (
-    <div>Home</div>
+    <div>{teams && <img src={teams[0].href}/>}
+          </div>
   )
 }
 
