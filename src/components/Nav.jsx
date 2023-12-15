@@ -2,17 +2,19 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
     return (
-        <div className="flex justify-evenly bg-gray-600 text-white p-4 w-full">
-            <img src='' alt="" />
+        <div className=" bg-gray-600 flex justify-between items-center w-full h-20 p-10">
+            <img className="w-7" src='/NBA.png' alt="" />
+            <div className="flex justify-evenly w-screen mr-10">
             <Link to='/'> 
-                <div>Home</div>
+                <img className="w-40" src="/homebutton.png" alt="" />
             </Link>
             <Link to='/teams'>
-                <div>Teams</div>
+                <img className="w-40" src="/teambutton.png" alt="" />
             </Link>
             <Link to='/contact'>
-                <div>Contact</div>
+                <img className="w-40" src="/contactbutton.png" alt="" />
             </Link>
+            </div>
         </div>
     )
 }
