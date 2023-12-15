@@ -10,11 +10,11 @@ const Teams = () => {
 
   return (
     <Fragment>
+    <div className="flex flex-col items-center">
       <Nav />
-      <hr />
-      <div className="">
+      <div className="max-w-screen-lg p-8">
       {teamData && (
-        <div className="flex justify-evenly flex-wrap items-center p-3 gap-5">
+        <div className="grid grid-cols-4 w-full gap-12">
           {teamData.map((team) => (
             <SoloedTeam
             key={team.id} 
@@ -23,6 +23,7 @@ const Teams = () => {
           ))}
         </div>
       )}
+      </div>
       </div>
     </Fragment>
   );
