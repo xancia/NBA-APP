@@ -1,30 +1,32 @@
 import React, { useState } from "react";
+import { Link, useParams } from 'react-router-dom';
 
-export default function SoloedTeam({ team, index }) {
+
+
+export default function SoloedTeam({ team }) {
+
   const [reveal, setReveal] = useState(false);
+
   function handleReveal() {
     setReveal(!reveal);
   }
+
   return (
-    <div onClick={handleReveal} className="Team">
-      <div>{team.full_name}</div>
+    <div onClick={handleReveal}>
+      <div className="flex justify-center gap-4">
+        <img src={team.href} alt="Fix me" className="h-20" />
+        <div>{team.full_name}</div>
+      </div>
       {/* <div>{team.abbreviation}</div> */}
       {reveal && (
-          <>
-          <img src="" alt="Fix me" />
-          <div>{team.city}</div>
-          <div>{team.conference}</div>
-          <div>{team.division}</div>
-        </>
+        <Link  className="flex justify-center flex-row bg-gray-200 gap-8">
+          <div>Cit: {team.city}</div>
+          <div>Coonfrence: {team.conference}</div>
+          <div>Division: {team.division}</div>
+
+        </Link>
       )}
       <hr />
     </div>
   );
 }
-//         "id": 1,
-//         "abbreviation": "ATL",
-//         "city": "Atlanta",
-//         "conference": "East",
-//         "division": "Southeast",
-//         "full_name": "Atlanta Hawks",
-//         "name": "Hawks"
